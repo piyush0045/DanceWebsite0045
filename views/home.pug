@@ -1,0 +1,46 @@
+//- To import base and rewrite it
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+   style
+      include ../static/style.css
+
+block content 
+     section#introSection
+            div Welcome to Harry's Dance Academy
+            div.small Eat Sleep Dance Repeat
+
+     section#missionSection 
+       h2 Our Mission
+       div.card       
+              h3 Dance Perfection
+              div.card-box 
+                 div.card-img   
+                    img(src="/static/pkkkk.jpg")
+                 div.card-content 
+                     p This is the best dance academy of the universe
+       div.card       
+              h3 Dance The Way You Like
+              div.card-box 
+                 div.card-img   
+                    img(src="/static/pkkkk.jpg")
+                 div.card-content 
+                     p This is the best dance academy of the universe
+       div.card       
+              h3 Expert Teaching
+              div.card-box 
+                 div.card-img   
+                    img(src="/static/pkkkk.jpg")
+                 div.card-content 
+                     p This is the best dance academy of the universe
+
+     section#sponsorsSection
+            h2 Our Sponsors
+            div#sponsors 
+              img(src="/static/applelogo.jpg")
+              img(src="/static/onepluslogo.jpg")
+              img(src="/static/facebooklogo.png")
+              img(src="/static/instagramlogo.jpg")
